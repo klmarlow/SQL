@@ -1,4 +1,4 @@
---Create a Cafe To Go Shop
+--Create a Cafe Shop
 CREATE TABLE CafeDisco_ToGo (id integer primary key, name text, price integer,aisle integer, quantity integer);
 
 INSERT INTO CafeDisco_ToGo VALUES (1, "Sweet Cream Cold Brew Coffee", 3.50, 1,12);
