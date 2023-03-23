@@ -1,0 +1,29 @@
+--Create a Cafe To Go Shop
+CREATE TABLE CafeDisco_ToGo (id integer primary key, name text, price integer,aisle integer, quantity integer);
+
+INSERT INTO CafeDisco_ToGo VALUES (1, "Sweet Cream Cold Brew Coffee", 3.50, 1,12);
+INSERT INTO CafeDisco_ToGo VALUES (2, "Iced Carmel Macchiato", 4.00,1,6);
+INSERT INTO CafeDisco_ToGo VALUES (3, "Iced Vanilla Latte", 4.00, 1, 12);
+INSERT INTO CafeDisco_ToGo VALUES (4, "Cinnamon Frappuccino",5.00, 1, 6);
+INSERT INTO CafeDisco_ToGo VALUES (5, "Iced Coffee Unsweetened", 3.00, 1, 12);
+
+INSERT INTO CafeDisco_ToGo VALUES (6, "Cheese Danish", 3.25, 2, 10);
+INSERT INTO CafeDisco_ToGo VALUES (7, "Chocolate Croissant", 3.00, 2, 15);
+INSERT INTO CafeDisco_ToGo VALUES (8, "Vanilla Scone", 2.00, 2, 13);
+INSERT INTO CafeDisco_ToGo VALUES (9, "Bluberry Muffin", 4.25, 2, 6);
+INSERT INTO CafeDisco_ToGo VALUES (10, "Cake Pops", 2.00, 2, 15);
+
+INSERT INTO CafeDisco_ToGo VALUES (11, "Fruit Cup", 3.50, 3, 10);
+INSERT INTO CafeDisco_ToGo VALUES (12, "Yogurt Parfait", 4.00, 3, 10);
+INSERT INTO CafeDisco_ToGo VALUES (13, "Protein Bar", 2.50, 3, 24);
+INSERT INTO CafeDisco_ToGo VALUES (14, "Bottled Water", 2.00, 1, 24);
+INSERT INTO CafeDisco_ToGo VALUES (15, "Bagel with Cream Cheese", 5.25, 3, 24);
+
+--display the database ordered by price. 
+SELECT * from cafedisco_togo ORDER BY price;
+
+--display the average price of all of your items
+SELECT avg (price) from cafedisco_togo;            (3.4166666666666665)
+
+--display the sum of quantity for all of your items
+SELECT sum (quantity) from cafedisco_togo;          (199)
